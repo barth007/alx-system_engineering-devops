@@ -1,0 +1,2 @@
+#!bin/bassh
+paste - - | cut -f1
