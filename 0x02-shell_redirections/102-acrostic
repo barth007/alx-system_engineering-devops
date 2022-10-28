@@ -1,2 +1,2 @@
 #!/bin/bash
-
+o -en $(cut -c1 | tr -d '\n')'\n'
