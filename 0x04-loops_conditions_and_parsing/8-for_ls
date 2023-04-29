@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This displays:
+#+ The content of the current directory
+#+ In a list format
+#+ Where only the part of the name after the first dash is displayed
+
+for FILE in *; do
+	if [[ -f $FILE ]] && [[ $FILE != .* ]]
+	then
+		filename=$(echo "$FILE" | cut -d'-' -f2-)
+		echo "$filename"
+	fi
+done
