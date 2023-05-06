@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script that listens to post 98 on localhost
+sudo nc -l localhost 98
