@@ -1,3 +1,5 @@
+# This create folder and file
+
 file {'/tmp':
     ensure => directory,
 }
