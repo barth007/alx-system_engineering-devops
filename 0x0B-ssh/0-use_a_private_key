@@ -1,3 +1,4 @@
+# script is use to ssh into a server
 #!/usr/bin/env bash
 chmod 600 ~/.ssh/school
 ssh  -i ~/.ssh/school ubuntu@54.174.11.154
