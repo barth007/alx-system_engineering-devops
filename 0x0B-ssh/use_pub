@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+cat public | ssh ubuntu@54.175.155.102 "cat >> ~/.ssh/authorized_keys"
