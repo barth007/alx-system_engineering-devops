@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script is used to install nginx web server on a server
+
+sudo apt-get -y update
+# install nginx
+sudo apt-get -y install nginx
+# allow listen on port 80
+sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
+sed -i 's/listen [::]:80 default_server;/listen [::]:80;/' /etc/nginx/sites-available/default
+echo "Hello world!" > /var/www/html/index.html
+sudo service nginx restart
