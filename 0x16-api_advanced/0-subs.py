@@ -13,3 +13,7 @@ def number_of_subscribers(subreddit):
         subcribers_data = data["data"]
         subcribers = subcribers_data["subscribers"]
         return subcribers
+    elif response.status_code == 302:
+        return 0
+    else:
+        return 0
