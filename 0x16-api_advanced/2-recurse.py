@@ -2,8 +2,8 @@
 """
    return list containing the titles of all hot articles
 """
-import requests
 import json
+import requests
 
 
 def recurse(subreddit, hot_list=[], after=None):
